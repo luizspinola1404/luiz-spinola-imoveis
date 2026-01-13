@@ -4,10 +4,11 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    git add package.json
-git commit -m "Adiciona script de build com vite"
-git push origin main
-    "dev": "NODE_ENV=development tsx server/index.ts",
+    "scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview"
+}    "dev": "NODE_ENV=development tsx server/index.ts",
     "build": "tsx script/build.ts",
     "start": "NODE_ENV=production node dist/index.cjs",
     "check": "tsc",
